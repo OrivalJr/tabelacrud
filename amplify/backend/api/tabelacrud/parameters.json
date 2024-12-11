@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "tabelacrud",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}

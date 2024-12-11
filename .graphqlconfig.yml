@@ -1,0 +1,12 @@
+projects:
+  tabelacrud:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - graphqltabelacrud
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: .

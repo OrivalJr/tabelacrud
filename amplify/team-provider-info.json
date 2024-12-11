@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-tabelacrud-dev-3ab73-authRole",
+      "UnauthRoleArn": "arn:aws:iam::944472297482:role/amplify-tabelacrud-dev-3ab73-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::944472297482:role/amplify-tabelacrud-dev-3ab73-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-tabelacrud-dev-3ab73-deployment",
+      "UnauthRoleName": "amplify-tabelacrud-dev-3ab73-unauthRole",
+      "StackName": "amplify-tabelacrud-dev-3ab73",
+      "StackId": "arn:aws:cloudformation:us-east-2:944472297482:stack/amplify-tabelacrud-dev-3ab73/c653dee0-b804-11ef-8dc1-0ac160df1faf",
+      "AmplifyAppId": "d3qfzrt8kbkrux"
+    },
+    "categories": {
+      "api": {
+        "tabelacrud": {}
+      }
+    }
+  }
+}
