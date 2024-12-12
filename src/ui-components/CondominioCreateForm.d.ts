@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { GridProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { AutocompleteProps, GridProps, TextFieldProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -26,12 +26,14 @@ export declare type CondominioCreateFormInputValues = {
     cnpj?: string;
     bairro?: string;
     cidade?: string;
+    Estrutura?: any;
 };
 export declare type CondominioCreateFormValidationValues = {
     nome?: ValidationFunction<string>;
     cnpj?: ValidationFunction<string>;
     bairro?: ValidationFunction<string>;
     cidade?: ValidationFunction<string>;
+    Estrutura?: ValidationFunction<any>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type CondominioCreateFormOverridesProps = {
@@ -40,6 +42,7 @@ export declare type CondominioCreateFormOverridesProps = {
     cnpj?: PrimitiveOverrideProps<TextFieldProps>;
     bairro?: PrimitiveOverrideProps<TextFieldProps>;
     cidade?: PrimitiveOverrideProps<TextFieldProps>;
+    Estrutura?: PrimitiveOverrideProps<AutocompleteProps>;
 } & EscapeHatchProps;
 export declare type CondominioCreateFormProps = React.PropsWithChildren<{
     overrides?: CondominioCreateFormOverridesProps | undefined | null;

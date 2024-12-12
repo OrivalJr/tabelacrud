@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { GridProps, SwitchFieldProps, TextFieldProps } from "@aws-amplify/ui-react";
+import { AutocompleteProps, GridProps, SwitchFieldProps, TextFieldProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -24,16 +24,19 @@ export declare type ValidationFunction<T> = (value: T, validationResponse: Valid
 export declare type EstruturaCreateFormInputValues = {
     descricao?: string;
     terraco?: boolean;
+    Condominio?: any;
 };
 export declare type EstruturaCreateFormValidationValues = {
     descricao?: ValidationFunction<string>;
     terraco?: ValidationFunction<boolean>;
+    Condominio?: ValidationFunction<any>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type EstruturaCreateFormOverridesProps = {
     EstruturaCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
     descricao?: PrimitiveOverrideProps<TextFieldProps>;
     terraco?: PrimitiveOverrideProps<SwitchFieldProps>;
+    Condominio?: PrimitiveOverrideProps<AutocompleteProps>;
 } & EscapeHatchProps;
 export declare type EstruturaCreateFormProps = React.PropsWithChildren<{
     overrides?: EstruturaCreateFormOverridesProps | undefined | null;

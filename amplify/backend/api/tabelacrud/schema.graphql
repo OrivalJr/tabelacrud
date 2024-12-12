@@ -12,5 +12,4 @@ type Condominio @model @auth(rules: [{allow: public}]) {
   bairro: String
   cidade: String
   Estrutura: Estrutura @hasOne
-}
- 
+} 
