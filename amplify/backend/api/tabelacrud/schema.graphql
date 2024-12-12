@@ -1,12 +1,16 @@
-type Blog @model @auth(rules: [{allow: public}]) {
+type Estrutura @model @auth(rules: [{allow: public}]) {
   id: ID!
-  name: String!
-  posts: [Post] @hasMany
+  descricao: String
+  terraco: Boolean
+  Condominio: Condominio @belongsTo
 }
 
-type Post @model @auth(rules: [{allow: public}]) {
+type Condominio @model @auth(rules: [{allow: public}]) {
   id: ID!
-  title: String!
-  blog: Blog @belongsTo
+  nome: String
+  cnpj: String
+  bairro: String
+  cidade: String
+  Estrutura: Estrutura @hasOne
 }
  
